@@ -6,29 +6,24 @@
 h1{font-size: 70px;
     color: purple;
     padding-left: 400px;
-    }
-
-    </style>
+    }</style>
     <title>Easy Reading</title>
     <link rel="stylesheet" type="text/css" href="sub_css.css">
 </head>
 <body>
-
 <section class="background">
 
 <img 
 onmouseover="this.src='image/bulb_on.png';" 
 onmouseout="this.src='image/bulb_off.png';" src="image/bulb_off.png" 
  alt="hover effect" class="bulb" />
-<a href=""><h1>Easy Reading</h1></a> 
+<a href=""><h1>Easy Reading</h1></a>
 
 <form class="search">
     <input type="text" placeholder="search" class="go">
     <button type="submit">Go</button>
 </form>
-</section> 
- @extends('layouts.app')
-
+</section> </br>
 <section class="nav">
 <ul>
 <li><a href="#">Book Categories</a>
@@ -41,11 +36,10 @@ onmouseout="this.src='image/bulb_off.png';" src="image/bulb_off.png"
 <li><a href="#">Biography</a></li>
 </ul>
 </li>
-
+<li><a href="/homein">Home</a></li>
  @if (Route::has('login'))
                 
     @if (Auth::check())
-<li><a href="/home">Home</a></li>
 @else
 <li><a href="{{ url('/login') }}">Log in</a></li>
 <li><a href="{{ url('/register') }}">Registration</a></li>
@@ -55,10 +49,8 @@ onmouseout="this.src='image/bulb_off.png';" src="image/bulb_off.png"
 
 <li><a href="/about">About</a></li>
 <li><a href="/contact">Contact</a></li>
-
-
-
-</ul>
+<li><a href="/home">My Account</a></li>
+</UL>
 
 </section>
 <div id="images"> <img  name="slide" src="image/25.jpg"/>

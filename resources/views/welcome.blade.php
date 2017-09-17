@@ -22,7 +22,7 @@ onmouseout="this.src='image/bulb_off.png';" src="image/bulb_off.png"
     <input type="text" placeholder="search" class="go">
     <button type="submit">Go</button>
 </form>
-</section> 
+</section> </br>
 <section class="nav">
 <ul>
 <li><a href="#">Book Categories</a>
@@ -30,16 +30,15 @@ onmouseout="this.src='image/bulb_off.png';" src="image/bulb_off.png"
 <li><a href="#">Bengali Literature</a></li>
 <li><a href="#">English Literature</a></li>
 <li><a href="#">Mathematics</a></li>
-<li><a href="#">Computer Science</a></li>
+<li><a href="/cse">Computer Science</a></li>
 <li><a href="#">Electrics & Electronics</a></li>
 <li><a href="#">Biography</a></li>
 </ul>
 </li>
-
+<li><a href="/homein">Home</a></li>
  @if (Route::has('login'))
                 
     @if (Auth::check())
-<li><a href="/home">Home</a></li>
 @else
 <li><a href="{{ url('/login') }}">Log in</a></li>
 <li><a href="{{ url('/register') }}">Registration</a></li>
@@ -49,7 +48,7 @@ onmouseout="this.src='image/bulb_off.png';" src="image/bulb_off.png"
 
 <li><a href="/about">About</a></li>
 <li><a href="/contact">Contact</a></li>
-
+<li><a href="/home">My Account</a></li>
 </UL>
 
 </section>
